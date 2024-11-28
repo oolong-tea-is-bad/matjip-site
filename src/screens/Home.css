@@ -1,0 +1,35 @@
+.Background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.Box {
+    border: solid 1px;
+}
+
+.myH1 {
+    font-size: 4vw;
+}
+
+.InputDiv {
+    margin: 1vh;
+}
+
+.Input {
+    width: 30vw;
+    height: 5vh;
+    font-size: 1vw;
+}
+
+.SearchDiv {
+    border: solid 1px;
+}
+
+.SearchButton {
+    width: 15vw;
+    height: 5vh;
+    font-size: 1.7vw;
+}
