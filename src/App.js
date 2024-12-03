@@ -8,7 +8,9 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* main home screen */}
         <Route path="/" element={<Home />} />
+        {/* a screen that shows lists of restaurants */}
         <Route path="/List" element={<List />} />
       </Routes>
     </Router>

@@ -1,0 +1,20 @@
+.Background {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.Box {
+    border: solid 1px;
+}
+
+.InputDiv {
+    margin: 1vh;
+}
+
+.Input {
+    width: 50vw;
+    height: 5vh;
+    font-size: 1.5vw;
+}
