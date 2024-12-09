@@ -27,20 +27,20 @@ export default function Home() {
     }
 
     return (
-        <div className={`${styles.Background} ${styles.Box}`}>
-            <text className={`${styles.myH1} ${styles.Box}`}>
+        <div className={styles.Background}>
+            <text className={`${styles.myH1}`}>
                 What Area Would You Like to Search?
             </text>
             <div className={`${styles.InputDiv}`}>
-                <input 
-                    className={`${styles.Input}`} 
+                <input
+                    className={styles.InputField} 
                     placeholder='e.g. 성수동'
                     value={inputValue}
                     onChange={handleInputChange}
                     onKeyDown={handleKeyDown}
                 />
             </div>
-            <div className={`${styles.SearchDiv}`}>
+            <div>
                 <button 
                     className={`${styles.SearchButton}`}
                     onClick={handleSearch}

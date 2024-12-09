@@ -2,6 +2,9 @@ import { useLocation, useNavigate } from "react-router-dom"
 import React, { useEffect, useState } from "react";
 import styles from '../css/List.module.css'
 
+import { restaurants } from "../data/data.js";
+
+
 export default function List() {
     const location = useLocation()
     const navigate = useNavigate()
@@ -26,11 +29,17 @@ export default function List() {
         }
     }
 
-    // To test whenever handleKeyDown is operated, whether a new screen of Lists pops up
-    // const [num, setNum] = useState(0)
-    // useEffect(() => {
-    //     setNum(Math.floor(Math.random() * (20 - 1)) + 1)
-    // }, [handleKeyDown])
+    const listRestaurants = restaurants.map(restaurant =>
+        <div className={`${styles.Box} ${styles.Lists}`}>
+            <div className={`${styles.ImageDiv}`}>
+                <p>Image</p>
+            </div>
+
+            <p>Name: {restaurant.name}</p>
+            <p>Category: {restaurant.category}</p>
+            <p>Rating: {restaurant.rating}</p>
+        </div>
+    )
 
     return (
         <div className={`${styles.Background} ${styles.Box} `}>
@@ -43,7 +52,10 @@ export default function List() {
                     onKeyDown={handleKeyDown}
                     onChange={handleInputChange}
                 />
-                {/* <p>test random number is: {num}</p> */}
+            </div>
+
+            <div className={`${styles.ListsDiv}`}>
+                {listRestaurants}
             </div>
         </div>
     )
