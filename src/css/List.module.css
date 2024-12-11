@@ -1,0 +1,46 @@
+/* To ensure that ListsDiv and Input have the same width. DELETE IT LATER */
+* {
+    box-sizing: border-box;
+}
+
+.Background {
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Box {
+    border: solid 1px;
+}
+
+.InputDiv {
+    padding: 1vh;
+}
+
+.Input {
+    width: 50vw;
+    height: 5vh;
+    font-size: 1.5vw;
+}
+
+.Lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ImageDiv {
+    border: solid 1px;
+    width: 10vh;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ListsDiv {
+    width: 50vw;
+}

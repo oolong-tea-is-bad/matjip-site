@@ -1,0 +1,96 @@
+@font-face {
+
+    font-family: 'Elice'; /* 사용할 폰트의 이름을 정의 */
+  
+    src: url('../fonts/EliceDigitalBaeum_Bold.ttf'); /* 폰트 파일의 위치 */
+  
+}
+
+* {
+    font-family: 'Elice';
+}
+
+.Background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(255, 101, 74);
+}
+
+.myH1 {
+    text-align: center;
+    font-size: 4vw;
+    animation: fade-in 2s;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
+    }
+  }
+  
+
+.InputDiv {
+    padding: 1vh;
+    padding-top: 4vh;
+}
+
+.InputField {
+    width: 30vw;
+    height: 5vh;
+    font-size: 1vw;
+    padding-inline: 1vw;
+    background-color: rgb(255, 131, 110);
+    color: rgba(255, 255, 255, 0.703);
+    border-radius: 4px;
+    border: None;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.InputField::placeholder {
+    color: rgba(255, 255, 255, 0.703);
+    transition: color 0.3s ease;
+}
+
+.InputField:hover {
+    background-color: rgb(255, 152, 134);
+    color: white;
+}
+  
+.InputField:focus {
+    border-color: rgb(255, 131, 110);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 131, 110);
+}
+
+.InputField:hover::placeholder {
+    color: white;
+}
+
+.InputField:focus::placeholder {
+    color: rgb(255, 131, 110);
+}
+
+.SearchButton {
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.7vw;
+    background-color: rgb(245, 128, 108);
+    color: rgba(255, 255, 255, 0.703);
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.SearchButton:hover {
+    cursor: pointer;
+    background-color: rgb(255, 152, 134);
+    color: white;
+}
