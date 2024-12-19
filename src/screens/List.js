@@ -10,7 +10,6 @@ export default function List() {
     const navigate = useNavigate()
 
     const { inputValue: initialInputValue } = location.state || {};
-
     const [inputValue, setInputValue] = useState(initialInputValue || '')
 
     const handleInputChange = (e) => {
