@@ -29,14 +29,20 @@ export default function List() {
     }
 
     const listRestaurants = restaurants.map(restaurant =>
-        <div className={`${styles.Box} ${styles.Lists}`}>
+        <div className={` ${styles.Lists}`}>
             <div className={`${styles.ImageDiv}`}>
                 <p>Image</p>
             </div>
 
-            <p>Name: {restaurant.name}</p>
-            <p>Category: {restaurant.category}</p>
-            <p>Rating: {restaurant.rating}</p>
+            <div className={styles.WordDiv}>
+                <div className={styles.NameDiv}>
+                    <p>{restaurant.name}</p>
+                </div>
+                <div className={styles.RatingDiv}>
+                    <p>Rating: {restaurant.rating}</p>
+                    <p>Category: {restaurant.category}</p>  
+                </div>
+            </div>
         </div>
     )
 

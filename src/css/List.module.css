@@ -1,46 +1,88 @@
-/* To ensure that ListsDiv and Input have the same width. DELETE IT LATER */
 * {
+    /* To ensure that ListsDiv and Input have the same width. DELETE IT LATER */
     box-sizing: border-box;
+    /* background-color: rgb(249, 249, 249); */
+}
+/* I think the default p margin-block has 1em, which made a big margin space that I don't want */
+p {
+    margin: 0;
 }
 
 .Background {
-    background-color: rgb(249, 249, 249);
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
 }
 
-.Box {
-    border: solid 1px;
-}
+
 
 .InputDiv {
-    padding: 1vh;
+    padding: 1vw;
 }
 
 .Input {
     width: 50vw;
-    height: 5vh;
+    height: 3vw;
     font-size: 1.5vw;
+    border: 1.5px;
+    border-radius: 8px;
+    /* border-color: rgb(250, 141, 121); */
+    border-style: solid;
+}
+
+.Input::placeholder {
+    color: rgb(105, 105, 105);
+    transition: 0.2s ease;
+}
+
+.Input:focus {
+    outline: none;
+}
+
+.Input:focus::placeholder {
+    color: transparent;
 }
 
 .Lists {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    margin-block: 1vw;
+    border: solid 1px;
+    padding: 1vw;
+    justify-content: space-evenly;
 }
 
 .ImageDiv {
     border: solid 1px;
-    width: 10vh;
+    width: 15vw;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2vw;
+}
+
+.WordDiv {
+    width: 50vw;
+    height: 15vw;
+    border: solid 1px
+}
+
+.NameDiv {
+    /* border: solid 1px; */
+    font-size: 3vw;
+    margin-inline: .5vw;
+    padding-inline: .5vw;
+}
+
+.RatingDiv {
+    /* border: solid 1px; */
+    font-size: 1.5vw;
+    margin-inline: 1vw;
+    padding: .5vw;
 }
 
 .ListsDiv {
-    width: 50vw;
+    width: 75vw;
 }
