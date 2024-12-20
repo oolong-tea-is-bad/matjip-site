@@ -9,22 +9,25 @@ p {
 }
 
 .Background {
+    background-color: rgb(249, 249, 249);
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-
-
 .InputDiv {
+    display: flex;
+    flex-direction: row;
     padding: 1vw;
+    gap: 1vw;
+    align-items: center;
 }
 
 .Input {
     width: 50vw;
-    height: 3vw;
+    height: 4vw;
     font-size: 1.5vw;
-    border: 1.5px;
+    border: 1.4px;
     border-radius: 8px;
     /* border-color: rgb(250, 141, 121); */
     border-style: solid;
@@ -41,6 +44,14 @@ p {
 
 .Input:focus::placeholder {
     color: transparent;
+}
+
+.FilterP {
+    border: solid 1px;
+    border-radius: 8px;
+    font-size: 1.3vw;
+    color: rgb(99, 99, 99);
+    padding: .5vw;
 }
 
 .Lists {

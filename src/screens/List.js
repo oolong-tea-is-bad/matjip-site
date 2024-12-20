@@ -57,6 +57,12 @@ export default function List() {
                     onKeyDown={handleKeyDown}
                     onChange={handleInputChange}
                 />
+                <p className={styles.FilterP}>
+                    필터
+                </p>
+            </div>
+
+            <div>
             </div>
 
             <div className={`${styles.ListsDiv}`}>

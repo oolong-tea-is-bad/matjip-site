@@ -31,8 +31,7 @@ export default function Home() {
     }
 
     return (
-        <div 
-        className={styles.Background}>
+        <div className={styles.Background}>
             <text className={`${styles.myH1}`}>
                 What Area Would You
                 <br />
